@@ -10,8 +10,8 @@
                         <select style="width: 250px" id="id_kab" name="id_kab" class="form-control">
                             <option value = ''>-- Pilih Kab / Kota --</option>
                             <?php
-                            foreach ($dpd_kab->result() as $row)
-                                echo "<option value='" . $row->id_kab . "'>" . $row->nama_kab . "</option>";
+                            foreach ($dpd_kec->result() as $row)
+                                echo "<option value='" . $row->id_kec . "'>" . $row->nama_kec . "</option>";
                             ?>  
                         </select>
                     </div>
@@ -42,6 +42,7 @@
                                 <?php echo $u->deskripsi; ?>
                             </p>
                             <address>
+                                <br>
                                 <strong>Koordinat</strong>
                                 <br>
                                 Latitude : <?php echo $u->lat ?>
@@ -132,7 +133,7 @@
                 <?php foreach($user as $s){ ?>
                     var map = new L.Map('mapp-detail', {
                         center: new L.LatLng(<?php echo $s->lat.",".$s->long; ?>),
-                        zoom: 9, 
+                        zoom: 11, 
                         layers: [grmp],
                         zoomControl : false
                     });

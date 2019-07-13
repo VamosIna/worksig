@@ -40,7 +40,7 @@
                 <div class="row row-offcanvas row-offcanvas-right">
                     <nav class="bg-white sidebar sidebar-fixed sidebar-offcanvas" id="sidebar">
                         <div class="user-info">
-                            <img src="<?php echo base_url() ?>assets/template/img/adminn.png" alt="">
+                            
                             <p class="name">Hello, <?php echo $this->session->userdata("nama"); ?></p>
 <!--                            <p class="designation">Manager</p>-->
                             <span class="online"></span>

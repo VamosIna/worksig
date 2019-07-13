@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
-        <title>Ambiquity</title>
+        <title>SIGMalangRaya</title>
         <meta name="author" content="luckynvic@gmail.com">
         <link href="<?php echo base_url('assets/user/') ?>css/bootstrap.min.css" rel="stylesheet">       
         <link href="<?php echo base_url('assets/user/') ?>ext/customScroll/css/jquery.mCustomScrollbar.css" rel="stylesheet">
@@ -17,7 +17,7 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
              
-                <a class="navbar-brand" href="<?php echo base_url('c_user'); ?>">Tempat working space Malang Raya</a>
+                <a class="navbar-brand" href="<?php echo base_url('c_user'); ?>">SIG X WORKING SPACE</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -29,9 +29,9 @@
                     <!-- <li class="nav-item">
                         <a href="<?php echo base_url('c_user'); ?>">Map</a>
                     </li> -->
-                    <!-- <li>
+                     <!-- <li>
                         <a href="<?php echo base_url('c_user/browse'); ?>">Browse</a>
-                    </li> 
+                    </li>  -->
                     <li>
                         <a href="<?php echo base_url('c_user/help'); ?>">Help</a>
                     </li>

@@ -20,7 +20,7 @@
                         <label >Kabupaten</label>           
                         <select id="id_kec" name="id_kec" class="form-control p-input">          
                             <?php
-                            foreach ($dpd_kab->result() as $row)
+                            foreach ($dpd_kec->result() as $row)
                                 echo "<option value='" . $row->id_kec . "'>" . $row->nama_kec . "</option>";
                             ?>  
                         </select>
