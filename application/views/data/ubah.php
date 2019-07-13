@@ -18,10 +18,10 @@
                         </div>
                         <div class="form-group">
                         <label >Kabupaten</label>           
-                        <select id="id_kab" name="id_kab" class="form-control p-input">          
+                        <select id="id_kec" name="id_kec" class="form-control p-input">          
                             <?php
                             foreach ($dpd_kab->result() as $row)
-                                echo "<option value='" . $row->id_kab . "'>" . $row->nama_kab . "</option>";
+                                echo "<option value='" . $row->id_kec . "'>" . $row->nama_kec . "</option>";
                             ?>  
                         </select>
                     </div>

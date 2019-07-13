@@ -74,8 +74,8 @@
         var pointGroup = {'working space':workingspaceLayer, 'coffee shop':coffeeshopLayer, 'public spaces':publicplacesLayer, 'wifi area':wifiareaLayer,'library':libraryLayer};  
 
         var map = new L.Map('map', {
-                    center: new L.LatLng(-7.61345400152069, 112.54642251122613),
-                    zoom: 8 , 
+                    center: new L.LatLng(-7.966327817582477, 112.62072346321777),
+                    zoom: 12 , 
                     layers: [grmp, workingspaceLayer, coffeeshopLayer, publicplacesLayer, wifiareaLayer, libraryLayer]
                 });
             map.addControl(new L.Control.Scale());
@@ -94,7 +94,7 @@
                 map.openPopup(popup);
             }
             var iconWahana = L.icon({
-                iconUrl: '<?php echo base_url('assets/user/') ?>iconWahana.png',
+                iconUrl: '<?php echo base_url('assets/user/') ?>working.png',
                 //shadowUrl: 'leaf-shadow.png',
 
                 iconSize:     [45, 47],
@@ -106,7 +106,7 @@
             
             });
              var iconTaman = L.icon({
-                iconUrl: '<?php echo base_url('assets/user/') ?>iconTaman.png',           
+                iconUrl: '<?php echo base_url('assets/user/') ?>coffeshop.png',           
                 iconSize:     [45, 47],
                 shadowSize:   [0, 0],
                 iconAnchor:   [22, 40],
@@ -116,7 +116,7 @@
             
             });
              var iconAlam = L.icon({
-                iconUrl: '<?php echo base_url('assets/user/') ?>iconAlam.png',
+                iconUrl: '<?php echo base_url('assets/user/') ?>public.png',
                 iconSize:     [45, 47],
                 shadowSize:   [0, 0],
                 iconAnchor:   [22, 40],
@@ -126,7 +126,7 @@
             
             });
              var iconSejarah = L.icon({
-                iconUrl: '<?php echo base_url('assets/user/') ?>iconSejarah.png',
+                iconUrl: '<?php echo base_url('assets/user/') ?>wifi.png',
                 iconSize:     [45, 47],
                 shadowSize:   [0, 0],
                 iconAnchor:   [22, 40],
@@ -136,7 +136,7 @@
             
             });
              var iconRenang = L.icon({
-                iconUrl: '<?php echo base_url('assets/user/') ?>iconMakam.png',
+                iconUrl: '<?php echo base_url('assets/user/') ?>library.png',
                 iconSize:     [45, 47],
                 shadowSize:   [0, 0],
                 iconAnchor:   [22, 40],
@@ -196,11 +196,11 @@
 
                 info.update = function (props) {
                 this._div.innerHTML = 
-                "<h4>Legenda</h4><img src='<?php echo base_url('assets/user/') ?>iconWahana.png'>working <br>"+
-                "<img src='<?php echo base_url('assets/user/') ?>iconTaman.png'>coffee<br>"+
-                "<img src='<?php echo base_url('assets/user/') ?>iconAlam.png'>public<br>"+
-                "<img src='<?php echo base_url('assets/user/') ?>iconSejarah.png'>wifi<br>"+
-                "<img src='<?php echo base_url('assets/user/') ?>iconRenang.png'>library"
+                "<h4>Legenda</h4><img src='<?php echo base_url('assets/user/') ?>working.png'>working <br>"+
+                "<img src='<?php echo base_url('assets/user/') ?>coffeshop.png'>coffee<br>"+
+                "<img src='<?php echo base_url('assets/user/') ?>public.png'>public<br>"+
+                "<img src='<?php echo base_url('assets/user/') ?>wifi.png'>wifi<br>"+
+                "<img src='<?php echo base_url('assets/user/') ?>library.png'>library"
                 };
 
           info.addTo(map);

@@ -60,7 +60,7 @@ class C_adm_utama extends CI_Controller {
 
     function ubah($id) {
         $data['dpd_kategori'] = $this->m_adm_utama->get_data_kategori();
-        $data['dpd_kec'] = $this->m_adm_utama->get_data_kec();
+        $data['dpd_kec'] = $this->m_adm_utama->get_data_kecamatan();
         $data['user'] = $this->m_adm_utama->getid($id);
 
         $data['konten'] = 'data/ubah';

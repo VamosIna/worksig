@@ -31,7 +31,7 @@
                     </li> -->
                     <!-- <li>
                         <a href="<?php echo base_url('c_user/browse'); ?>">Browse</a>
-                    </li> -->
+                    </li> 
                     <li>
                         <a href="<?php echo base_url('c_user/help'); ?>">Help</a>
                     </li>
